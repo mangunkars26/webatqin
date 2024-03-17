@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Bahasa Arab</title>
+    <link rel="icon" type="image/png" href="images/favicon/flag.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-3vB5yZaNhnPU1JGK31AzfuOR5wc1NQVVihz4dItLXQ+bT3ZZORc44N9ryE4L2M49iNT0n5n1uoojsHVD4AgzJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-Sf3OP6L39bezcuK5oHYfCTfRbp8sTWVwZiI2acQ9H7sTNQIgZzREcJ/1GJ63Mbj4GZ9xHvvZVcjGKSRb6ZUoBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-1Bu5z5e9t2Ml7jSDvCE8rIqgpnPbFaRO8r9XsOG+J5p3OcFPKlZxgtUmnC+ZwH5P5aPv4eUJ0vIRG8Rn5fUP/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"
+        integrity="sha512-M1PwmZCwZJoa2UjDcs57j/6UXZzMG91LK6f3HpUDOLtP6CKVfBpjkgbYiLFsUFsM0NcpwQyZm7vFBl6kUlAY6w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="scroll-smooth">
+    <header>
+        <nav class="bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+
+                    <!--
+                    <div class="flex-shrink-0">
+                        <a href="#" class="text-blue-800 text-2xl font-semibold">Atqin Arabic</a>
+                    </div>
+                    <div class="hidden md:flex md:items-center md:space-x-4">
+                        <a href="#"
+                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">Home</a>
+                        <a href="#"
+                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">About</a>
+                        <a href="#"
+                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">Services</a>
+                        <a href="#"
+                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">Contact</a>
+                    </div>
+                    -->
+                    <div class="md:hidden">
+                        <!-- Burger menu button 
+                                                <button id="burger-menu" type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                            aria-label="Main menu" aria-expanded="false">
+                            <svg class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                            <svg class="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>-->
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <!--
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 justify-end pt-2 pb-3 sm:px-3">
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">Home</a>
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">About</a>
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">Services</a>
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">Contact</a>
+                </div>
+            </div>
+            -->
+
+        </nav>
+    </header>
+
+
+    <!--Intro Baru-->
+    <div class="container mx-auto py-auto px-2 mt-0 ">
+        <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+
+            <div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl mb-15 mt-auto font-semibold text-center md:text-left text-gray-800 mb-4">
+                    <span class="font-bold text-green-800">Bulan Ramadhan <br></span>Momen Terbaik Untuk Mulai Belajar Bahasa Al Qur’an
+                </h1>
+    
+                <h2 class="text-md text-gray-700 mb-2 text-center md:text-left">
+                    Rayakan Ramadhan dengan wujudkan impian memahami bahasa Al Qur’an tanpa pusing dengan waktu dan biaya. <br>
+                    <span class="text-2xl text-gray-800 mb-6 mt-3 font-semibold text-center md:text-left">#BelajarDariRumah,Biaya Terjangkau Bebas Tentukan Waktu Belajar</span>
+                </h2>
+    
+                <h4 class="text-lg text-gray-700 mt-4 mb-0 text-center md:text-left">Masih ragu? Kami selalu ada untuk antum.</h4>
+                <div class="block justify-center flex">
+                    <a href="#formulir-pendaftaran" class="px-4 py-3 mt-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-800 transition duration-300 ease-in-out cta-btn">Konsultasi Gratis</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="images/hero.jpeg" alt="Hero Atqin" class="h-auto w-full md:w-screen-md object-right shadow-md bg-gray-900">
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        $(".cta-btn").click(function () {
+            $("html, body").animate({
+                scrollTop: $("#formulir-pendaftaran").offset().top,
+            }, 1000, "smooth");
+        });
+
+    </script>
+
+    <!--Stats-->
+    <section id="scroll-section" class="w-full bg-white">
+        <div class="container mx-auto lg:w-full px-6 lg:px-8">
+            <div class="mx-auto px-2 py-2 items-center justify-center">
+                <div class="mx-auto max-w-2xl lg:text-center">
+                    <h2 class="font-semibold text-center leading-7 text-4xl lg:text-5xl text-gray-600">Belajar Bahasa Arab Dari Nol</h2>
+                    <p class="mt-2 mb-4 font-bold text-center tracking-tight text-gray-900 sm:text-6xl lg:text-5xl ">
+                        Sediakan semua jalan antum jauh lebih cepat</p>
+                </div>
+                <div class="py-8 sm:py-32">
+                    <div class="mx-auto max-w-7xl border-2 border-black ">
+                        <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                                <dt class="text-1xl font-bold leading-7 text-blue-900">
+                                </dt>
+                                <dd id="transactions" class="order-first text-6xl font-bold text-blue-900 sm:text-5xl">
+                                </dd>
+                            </div>
+                            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                                <dt class="text-1xl font-bold leading-7 text-blue-900">Assets under holding</dt>
+                                <dd id="assets"
+                                    class="order-first text-6xl font-bold tracking-tight text-blue-900 sm:text-5xl">
+                                </dd>
+                            </div>
+                            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                                <dt class="text-1xl font-bold leading-7 text-blue-900">New users annually</dt>
+                                <dd id="users"
+                                    class="order-first text-6xl font-bold tracking-tight text-blue-900 sm:text-5xl">
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Stats kedua-->
+    <section id="scroll-section" class="w-full bg-white">
+        <div class="min-h-screen flex justify-center items-center">
+            <div class="">
+                <div class="text-center font-semibold">
+                    <h1 class="text-5xl">
+                        <span class="text-blue-700 tracking-wide">Flexible </span>
+                        <span>Plans</span>
+                    </h1>
+                    <p class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full">
+                        Choose a plan that works best for you and<br /> your team.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto pt-4">
+        <div class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-5">
+            <h1 tabindex="0"
+                class="focus:outline-none xl:text-5xl md:text-3xl text-xl dark:text-white text-center text-gray-800 font-extrabold mb-5 pt-4">
+                Partnerships with Coveted Brands</h1>
+            <p tabindex="0"
+                class="focus:outline-none text-base md:text-lg lg:text-xl dark:text-gray-200 text-center text-gray-600 font-normal xl:w-10/12 xl:mx-auto">
+                Our success has come from being committed to the property and investing in the development of the
+                product to maximize sales. At the same time and maintaining the integrity.</p>
+        </div>
+    </div>
+
+    <!--MAIN FEATURES-->
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-base font-semibold leading-7 text-indigo-600">Kuasai Bahasa Arab Lebih Cepat</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sediakan semua jalan antum
+                    jauh lebih cepat </p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget
+                    aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra
+                    elit nunc.</p>
+            </div>
+            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                    <!--icon & text-->
+                    <div class="relative pl-20">
+                        <dt class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-600">
+                                <img src="images/favicon/icons8-facebook-48.png" alt="">
+                            </div>
+                            Push to deploy
+                        </dt>
+                        <dd class="mt-2 text-base leading-9 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                            adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                    </div>
+                    <!--icon & text-->
+                    <div class="relative pl-20">
+                        <dt class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                            </div>
+                            Push to deploy
+                        </dt>
+                        <dd class="mt-2 text-base leading-9 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                            adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                    </div> <!--icon & text-->
+                    <div class="relative pl-20">
+                        <dt class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                            </div>
+                            Push to deploy
+                        </dt>
+                        <dd class="mt-2 text-base leading-9 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                            adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                    </div> <!--icon & text-->
+                    <div class="relative pl-20">
+                        <dt class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                            </div>
+                            Push to deploy
+                        </dt>
+                        <dd class="mt-2 text-base leading-9 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                            adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!--monolog-->
+    <section class="bg-orange-700 py-16 mb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <img src="images/hero.jpeg" alt="Kursus Bahasa Arab"
+                        class="mx-auto md:mx-0 md:w-full rounded-lg shadow-md">
+                </div>
+                <div class="text-gray-800">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Mau Menguasai Bahasa Arab?</h2>
+                    <p class="mb-4">Temukan cara efektif untuk mempelajari bahasa Arab bersama kami.</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Pelajari dengan kurikulum yang terstruktur.</li>
+                        <li>Dapatkan bahan ajar berkualitas.</li>
+                        <li>Dapatkan dukungan langsung dari instruktur.</li>
+                    </ul>
+                    <p class="mb-4">Jangan biarkan ketidakpastian menghambat Anda. Bergabunglah sekarang dan mulailah
+                        perjalanan Anda!</p>
+                    <div class="block justify-center flex">
+                        <a href="">
+                            <button id="ctaBtn"
+                                class="px-4 py-3 mt-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-800 transition duration-300 ease-in-out">Daftar
+                                Sekarang</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Testimoni-->
+    <div id="testimonials" class="bg-white dark:bg-gray-900 dark:text-gray-100">
+        <div class="container mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
+            <div class="relative">
+                <div
+                    class="absolute right-5 top-10 -mt-5 font-serif text-9xl text-gray-200 opacity-75 dark:text-gray-700/75">
+                    “
+                </div>
+                <div class="relative text-center">
+                    <div class="mb-3">
+                        <!-- Panah Kiri -->
+                        <button
+                            class="prev-btn absolute -left-6 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full shadow-md focus:outline-none opacity-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-300"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Panah Kanan -->
+                        <button
+                            class="next-btn absolute -right-7 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full shadow-md focus:outline-none opacity-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-300"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+
+
+
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="testimonial-slide inline-flex items-center rounded-lg border border-amber-200 bg-amber-50 px-2 py-1 text-amber-500 dark:border-amber-900/50 dark:bg-amber-900/25">
+                            <!-- Testimonial Content -->
+                            <blockquote class="mx-auto lg:w-2/3 xl:w-1/2 flex flex-col items-center">
+                                <span
+                                    class="mx-auto size-20 overflow-hidden rounded-full border-2 border-gray-50 flex justify-center items-center">
+                                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg"
+                                        alt="Avatar Photo" class="rounded-full h-20 w-20" />
+                                </span>
+                                <p class="mb-5 text-xl font-semibold leading-8">
+                                    Testimonial 1: I’ve been using pixelcave themes for years. The code is consistently
+                                    high-quality and pleasant to work with, so I highly recommended them.
+                                </p>
+                                <footer class="space-y-4">
+                                    <a href="javascript:void(0)"
+                                        class="text-lg font-semibold text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">
+                                        John Smith
+                                    </a>
+                                    <div class="mx-auto my-1 h-1 w-10 rounded-lg bg-blue-100 dark:bg-blue-500/25"></div>
+                                    <p class="font-medium text-gray-500 dark:text-gray-400">
+                                        Founder and Lead Developer
+                                    </p>
+                                </footer>
+                            </blockquote>
+                            <!-- End Testimonial Content -->
+
+                        </div>
+                        <!-- End Testimonial 1 -->
+
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="testimonial-slide inline-flex items-center rounded-lg border border-amber-200 bg-amber-50 px-2 py-1 text-amber-500 dark:border-amber-900/50 dark:bg-amber-900/25">
+                            <!-- Testimonial Content -->
+                            <blockquote class="mx-auto lg:w-2/3 xl:w-1/2 flex flex-col items-center">
+                                <span
+                                    class="mx-auto size-20 overflow-hidden rounded-full border-2 border-gray-50 flex justify-center items-center">
+                                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg"
+                                        alt="Avatar Photo" class="rounded-full h-20 w-20" />
+                                </span>
+                                <p class="mb-5 text-xl font-semibold leading-8">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum tempore rerum hic.
+                                    Impedit tempore ad animi minus quia facere aliquam!
+                                </p>
+                                <footer class="space-y-4">
+                                    <a href="javascript:void(0)"
+                                        class="text-lg font-semibold text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">
+                                        Joko Susilo
+                                    </a>
+                                    <div class="mx-auto my-1 h-1 w-10 rounded-lg bg-blue-100 dark:bg-blue-500/25"></div>
+                                    <p class="font-medium text-gray-500 dark:text-gray-400">
+                                        Pelawak </p>
+                                </footer>
+                            </blockquote>
+                            <!-- End Testimonial Content -->
+
+                        </div> <!-- End Testimonial Content -->
+
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="testimonial-slide inline-flex items-center rounded-lg border border-amber-200 bg-amber-50 px-2 py-1 text-amber-500 dark:border-amber-900/50 dark:bg-amber-900/25">
+                            <!-- Testimonial Content -->
+                            <blockquote class="mx-auto lg:w-2/3 xl:w-1/2 flex flex-col items-center">
+                                <span
+                                    class="mx-auto size-20 overflow-hidden rounded-full border-2 border-gray-50 flex justify-center items-center">
+                                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg"
+                                        alt="Avatar Photo" class="rounded-full h-20 w-20" />
+                                </span>
+                                <p class="mb-5 text-xl font-semibold leading-8">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit eligendi quod illo
+                                    minima!
+                                    Sit quasi unde cumque eaque odio rem labore, autem, beatae esse harum a quod at cum
+                                    excepturi.
+                                </p>
+                                <footer class="space-y-4">
+                                    <a href="javascript:void(0)"
+                                        class="text-lg font-semibold text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">
+                                        Subandiyo </a>
+                                    <div class="mx-auto my-1 h-1 w-10 rounded-lg bg-blue-100 dark:bg-blue-500/25"></div>
+                                    <p class="font-medium text-gray-500 dark:text-gray-400">
+                                        Preman Pasar </p>
+                                </footer>
+                            </blockquote>
+                            <!-- End Testimonial Content -->
+
+                        </div> <!-- End Testimonial Content -->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Testimonials Section: Simple -->
+    <!--Garansi-->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Garansi Kepuasan</h2>
+                <p class="text-gray-700 text-lg mb-8">Kami sangat yakin dengan kualitas kursus kami sehingga kami
+                    memberikan garansi kepuasan 100%. Jika Anda merasa tidak puas dengan kursus dalam waktu 30 hari
+                    setelah pembelian, kami akan mengembalikan uang Anda tanpa pertanyaan.</p>
+                <button
+                    class="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 transition duration-300 inline-block">Mulai
+                    Sekarang</button>
+            </div>
+        </div>
+    </section>
+    <!--tawaran menarik-->
+    <section class="bg-gradient-to-r from-purple-500 to-pink-500 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Penawaran Spesial</h2>
+                <p class="text-gray-200 text-lg mb-8">Dapatkan akses ke seluruh kursus kami dengan diskon spesial hanya
+                    untuk Anda! Jangan lewatkan kesempatan ini!</p>
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Hemat 50%</h3>
+                            <p class="text-lg text-gray-700 mb-6">Langganan sekarang dan nikmati diskon 50% untuk semua
+                                kursus!</p>
+                            <a href="#"
+                                class="bg-blue-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 inline-block">Dapatkan
+                                Penawaran</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQ Sections-->
+    <section>
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+            <div class="mx-auto px-10 mt-7 mb-7 text-center">
+                <h2 class="text-3xl md:text-4xl mb-4 text-blue-800 font-bold">Pertanyaan Sering Ditanyakan</h2>
+            </div>
+
+            <!-- FAQ item 1 -->
+            <div class="border rounded-lg mb-4">
+                <button
+                    class="faq-button w-full bg-white text-left p-4 hover:bg-blue-600 hover:text-white focus:outline-none relative overflow-hidden">
+                    <i class="fas fa-chevron-down icon mr-2"></i>
+                    <span>Bagaimana metode belajar di ATQIN Arabic?</span>
+                </button>
+                <div class="p-4 hidden">
+                    <p class="text-gray-700">Kami gunakan metode paling campuran</p>
+                </div>
+            </div>
+
+            <!-- FAQ item 2 -->
+            <div class="border rounded-lg mb-4">
+                <button
+                    class="faq-button w-full bg-white text-left p-4 hover:bg-blue-600 hover:text-white focus:outline-none relative overflow-hidden">
+                    <i class="fas fa-chevron-down icon mr-2"></i>
+                    <span>Mengapa kita menggunakannya?</span>
+                </button>
+                <div class="p-4 hidden">
+                    <p class="text-gray-700">Lorem Ipsum digunakan sebagai contoh teks untuk mengilustrasikan tata letak
+                        dan desain.</p>
+                </div>
+            </div>
+
+            <!-- FAQ item 3 -->
+            <div class="border rounded-lg mb-4">
+                <button
+                    class="faq-button w-full bg-white text-left p-4 hover:bg-blue-600 hover:text-white focus:outline-none relative overflow-hidden">
+                    <i class="fas fa-chevron-down icon mr-2"></i>
+                    <span>Dari mana asal Lorem Ipsum?</span>
+                </button>
+                <div class="p-4 hidden">
+                    <p class="text-gray-700">Lorem Ipsum berasal dari bagian 1.10.32 dan 1.10.33 dari 'de Finibus
+                        Bonorum et Malorum' (Tentang Hasil Akhir dari Kebaikan dan Keburukan) oleh Cicero.</p>
+                </div>
+            </div>
+
+            <!-- FAQ item 4 -->
+            <div class="border rounded-lg mb-4">
+                <button
+                    class="faq-button w-full bg-white text-left p-4 hover:bg-blue-600 hover:text-white focus:outline-none relative overflow-hidden">
+                    <i class="fas fa-chevron-down icon mr-2"></i>
+                    <span>Apa saja manfaatnya?</span>
+                </button>
+                <div class="p-4 hidden">
+                    <p class="text-gray-700">Lorem Ipsum membantu dalam menguji tata letak, tipografi, dan desain
+                        grafis.</p>
+                </div>
+            </div>
+
+            <!-- FAQ item 5 -->
+            <div class="border rounded-lg mb-4">
+                <button
+                    class="faq-button w-full bg-white text-left p-4 hover:bg-blue-600 hover:text-white focus:outline-none relative overflow-hidden">
+                    <i class="fas fa-chevron-down icon mr-2"></i>
+                    <span>Bagaimana cara menggunakannya?</span>
+                </button>
+                <div class="p-4 hidden">
+                    <p class="text-gray-700">Lorem Ipsum dapat dimasukkan ke dalam desain web, majalah, buku, dan
+                        banyak lagi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.faq-button').click(function () {
+                // Tutup semua jawaban FAQ
+                $('.faq-button').not(this).removeClass('active');
+                $('.faq-button').not(this).removeClass('bg-blue-600 text-white');
+                $('.faq-button').not(this).addClass('bg-white text-gray-800');
+                $('.faq-button').not(this).next('.p-4').slideUp('slow');
+
+                // Toggle aktif/non-aktif pada tombol FAQ yang diklik
+                $(this).toggleClass('active');
+                $(this).toggleClass('bg-blue-600 text-white');
+                $(this).toggleClass('bg-white text-gray-800');
+
+                // Toggle tampil/sembunyi pada jawaban FAQ yang sesuai
+                $(this).next('.p-4').slideToggle('fast');
+            });
+        });
+    </script>
+
+
+    <!--Partnership-->
+    <div class="container mx-auto pt-16">
+        <div class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16">
+            <h1 tabindex="0"
+                class="focus:outline-none xl:text-5xl md:text-3xl text-xl dark:text-white text-center text-gray-800 font-extrabold mb-5 pt-4">
+                Partnerships with Coveted Brands</h1>
+            <p tabindex="0"
+                class="focus:outline-none text-base md:text-lg lg:text-xl dark:text-gray-200 text-center text-gray-600 font-normal xl:w-10/12 xl:mx-auto">
+                Our success has come from being committed to the property and investing in the development of the
+                product to maximize sales. At the same time and maintaining the integrity.</p>
+        </div>
+
+        <!--Icon Partnership-->
+        <!--
+
+<div class="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200 xl:pb-10 pb-16 items-center">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/adidas-dark.png"
+                    alt="Adidas" role="img" />
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r border-gray-200 xl:pb-10 pb-16 items-center">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/channel-dark.png"
+                    alt="Chanel" role="img" />
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b border-gray-200 xl:pb-10 pb-16 pt-4 items-center">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/nike-dark.png" alt="Nike"
+                    role="img" />
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center lg:border-b xl:border-b lg:border-l xl:border-l border-gray-200 xl:pb-10 pb-16 items-center">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/toyota-dark.png"
+                    alt="Toyota" role="img" />
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 xl:pt-10 items-center">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/gs1-dark.png" alt="GS1"
+                    role="img" />
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 xl:pt-10 items-center">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/berry-dark.png"
+                    alt="BlackBerry" role="img" />
+            </div>
+            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:pt-10 lg:pt-10 md:pt-2 pt-16">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/min-dark.png" alt="Mini"
+                    role="img" />
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-l lg:border-l border-gray-200 xl:pt-10 lg:pt-10 md:pt-2 pt-16">
+                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/honda-dark.png" alt="Honda"
+                    role="img" />
+            </div>
+            </div>
+
+      -->
+    </div>
+    <!--FORMULIR-->
+    <section id="formulir-pendaftaran" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <!-- Gambar Hero -->
+                <img src="images/homepage-hero.png" alt="Gambar Hero" class="rounded-lg shadow-md">
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left text-gray-800 mb-8">Formulir WhatsApp
+                </h2>
+                <form id="whatsappForm" class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="nama" class="block text-gray-700 font-bold mb-2">Nama:</label>
+                        <input type="text" id="nama" name="nama"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="no_whatsapp" class="block text-gray-700 font-bold mb-2">Nomor WhatsApp:</label>
+                        <input type="text" id="no_whatsapp" name="no_whatsapp"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="asal_kota" class="block text-gray-700 font-bold mb-2">Asal Kota:</label>
+                        <input type="text" id="asal_kota" name="asal_kota"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="isi_pesan" class="block text-gray-700 font-bold mb-2">Isi Pesan:</label>
+                        <textarea id="isi_pesan" name="isi_pesan"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                            rows="4" required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-600 transition duration-300 w-full">Kirim
+                        Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <section>
+        <footer class="bg-blue-800 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Seksi Logo dan Informasi -->
+                    <div class="mb-8 md:mb-0">
+                        <h4 class="text-xl font-bold mb-4">Nama Web Anda</h4>
+                        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <ul class="mt-4 flex">
+                            <!-- Facebook Icon -->
+                            <li class="mr-4">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="images/favicon/icons8-facebook-48.png" alt="Facebook Icon"
+                                        class="w-6 h-6">
+                                </a>
+                            </li>
+                            <!-- Instagram Icon -->
+                            <li class="mr-4">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="images/favicon/icons8-ig-48.png" alt="Instagram Icon" class="w-6 h-6">
+                                </a>
+                            </li>
+                            <!-- TikTok Icon -->
+                            <li class="mr-4">
+                                <a href="https://www.tiktok.com/" target="_blank">
+                                    <img src="images/favicon/icons8-tiktok-50.png" alt="TikTok Icon" class="w-6 h-6">
+                                </a>
+                            </li>
+                            <!-- YouTube Icon -->
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <img src="images/favicon/icons8-youtube-48.png" alt="YouTube Icon" class="w-6 h-6">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End of Seksi Logo dan Informasi -->
+
+                    <!-- Seksi Tautan -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Tautan</h4>
+                        <ul>
+                            <li><a href="#" class="hover:text-gray-300 transition duration-300">Beranda</a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition duration-300">Tentang</a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition duration-300">Kontak</a></li>
+                            <li><a href="#" class="hover:text-gray-300 transition duration-300">Kebijakan Privasi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End of Seksi Tautan -->
+
+                    <!-- Seksi Kontak -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 -right-4">Kontak</h4>
+                        <ul>
+                            <li>Email : arabic.course2610@gmail.com</li>
+                            <li>Telepon : 089607354448</li>
+                            <li>Alamat : Ngipikrejo, Banjararum, Kalibawang, Kulon Progo</li>
+                        </ul>
+                    </div>
+                    <!-- End of Seksi Kontak -->
+
+                    <!-- Seksi Langganan -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Berlangganan Newsletter</h4>
+                        <form class="flex flex-col">
+                            <input type="email" placeholder="Email"
+                                class="bg-white text-white py-2 px-4 mb-2 rounded-lg focus:outline-none">
+                            <button type="submit"
+                                class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Berlangganan</button>
+                        </form>
+                    </div>
+                    <!-- End of Seksi Langganan -->
+                </div>
+
+                <!-- Hak Cipta -->
+                <div class="text-center mt-12">
+                    <p>&copy; 2024 Nama Web Anda. Hak Cipta Dilindungi.</p>
+                </div>
+                <!-- End of Hak Cipta -->
+            </div>
+        </footer>
+
+    </section>
+
+    <!-- Tombol Back to Top -->
+    <button id="back-to-top"
+        class="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow hidden"
+        onclick="backToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

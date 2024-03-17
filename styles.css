@@ -1,0 +1,89 @@
+.backgroundweb {
+  background-color: white;
+}
+
+.faq-animated .question {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-animated .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+/* Styles for navbar */
+/* Navbar toggle button styles */
+#mobile-menu-button:hover {
+    cursor: pointer;
+  }
+  
+  /* Submenu styles */
+  .relative:hover .absolute,
+  .relative.hover .absolute {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Navbar toggle button animation */
+  .change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .change .line2 {
+    opacity: 0;
+  }
+  
+  .change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .active {
+    background-color: #4299e1; /* Warna biru */
+    padding: 20px;
+    color: #ffffff; /* Warna teks putih */
+}
+
+/*MAIN FEATURES*/
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+    /* FAQ Accordion */
+    .active-question {
+      background-color: #043c75; /* Warna latar belakang pertanyaan aktif */
+      color: #ffffff; /* Warna teks pertanyaan aktif */
+  }
+
+  .active-answer {
+      background-color: #ffffff; /* Warna latar belakang jawaban aktif */
+  }
+
+  .icon {
+      margin-right: 8px; /* Margin untuk ikon */
+  }
+
+  /*
+  Animasi Testimoni
+  */
+  .testimonial-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.testimonial-slide.active {
+    display: inline-flex;
+    opacity: 1;
+}
