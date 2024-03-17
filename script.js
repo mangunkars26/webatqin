@@ -117,34 +117,4 @@ function backToTop() {
 }
 
 //Testimonial
-$(document).ready(function () {
-  var testimonials = $(".testimonial-slide");
-  var currentIndex = 0;
-  var itemsCount = testimonials.length;
 
-  function showTestimonial(index) {
-      testimonials.hide().eq(index).fadeIn();
-  }
-
-  function nextTestimonial() {
-      currentIndex = (currentIndex + 1) % itemsCount;
-      showTestimonial(currentIndex);
-  }
-
-  function prevTestimonial() {
-      currentIndex = (currentIndex - 1 + itemsCount) % itemsCount;
-      showTestimonial(currentIndex);
-  }
-
-  // Initial testimonial display
-  showTestimonial(currentIndex);
-
-  // Arrow buttons functionality
-  $(".next-btn").on("click", function () {
-      nextTestimonial();
-  });
-
-  $(".prev-btn").on("click", function () {
-      prevTestimonial();
-  });
-});
