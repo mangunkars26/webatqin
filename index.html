@@ -21,74 +21,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"
         integrity="sha512-M1PwmZCwZJoa2UjDcs57j/6UXZzMG91LK6f3HpUDOLtP6CKVfBpjkgbYiLFsUFsM0NcpwQyZm7vFBl6kUlAY6w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@heroicons/react@latest/dist/index.css" rel="stylesheet">
+
 </head>
 
 <body class="scroll-smooth">
-    <header>
-        <nav class="bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-16">
-
-                    <!--
-                    <div class="flex-shrink-0">
-                        <a href="#" class="text-blue-800 text-2xl font-semibold">Atqin Arabic</a>
-                    </div>
-                    <div class="hidden md:flex md:items-center md:space-x-4">
-                        <a href="#"
-                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">Home</a>
-                        <a href="#"
-                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">About</a>
-                        <a href="#"
-                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">Services</a>
-                        <a href="#"
-                            class="text-blue-800 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-base font-sans">Contact</a>
-                    </div>
-                    -->
-                    <div class="md:hidden">
-                        <!-- Burger menu button 
-                                                <button id="burger-menu" type="button"
-                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
-                            aria-label="Main menu" aria-expanded="false">
-                            <svg class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"></path>
-                            </svg>
-                            <svg class="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>-->
-
-                        </button>
-                    </div>
+    <header class="bg-white">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex-1 md:flex md:items-center md:gap-12">
+                    <a class="block text-teal-600" href="#">
+                        <span class="sr-only">Home</span>
+                        <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
                 </div>
-            </div>
-            <!-- Mobile menu -->
-            <!--
-            <div class="md:hidden hidden" id="mobile-menu">
-                <div class="px-2 justify-end pt-2 pb-3 sm:px-3">
-                    <a href="#"
-                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">Home</a>
-                    <a href="#"
-                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">About</a>
-                    <a href="#"
-                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">Services</a>
-                    <a href="#"
-                        class="block px-3 py-2 rounded-md text-base font-medium text-blue-950 hover:bg-blue-800 hover:text-white">Contact</a>
-                </div>
-            </div>
-            -->
 
-        </nav>
+            </div>
+        </div>
     </header>
+    <a href="https://wa.me/6289612679696" class="fixed bottom-12 right-5 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full shadow-lg flex items-center justify-center space-x-2 z-10">
+        <span class="icon-[logos--whatsapp-icon]"></span>
+    </a>
 
-
-    <!--Intro Baru-->
-    <!-- Intro Baru -->
-    <div class="container mx-auto py-auto px-2 mt-0 max-w-screen-xl sm:mt-0 h-screen">
-        <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+    <!-- Intro-->
+    <div class="bg-cover container mx-auto py-auto px-2 mt-0 max-w-screen-xl sm:mt-0 h-screen ">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
                 <h1
-                    class="text-3xl md:text-4xl lg:text-5xl mb-15 mt-auto font-semibold text-center md:text-left text-gray-800 mb-4">
+                    class="text-4xl md:text-4xl lg:text-5xl mb-15 mt-auto font-semibold text-center md:text-left text-gray-800 mb-4">
                     Rayakan<span class="font-bold text-green-800"> Bulan Ramadhan <br></span>Momen Terbaik Mulai Belajar
                     Bahasa Al Qur’an
                 </h1>
@@ -97,7 +61,7 @@
                     Wujudkan impian bisa bahasa Al Qur’an tanpa pusing dengan waktu dan
                     biaya.
                     <br>
-                    <span class="text-2xl text-gray-800 mb-6 mt-3 font-semibold text-center md:text-left">
+                    <span class="text-md text-gray-800 mb-6 mt-3 font-semibold text-center md:text-left">
                         #BelajarDariRumah, Biaya Terjangkau Bebas Tentukan Waktu Belajar</span>
                 </h2>
 
@@ -105,31 +69,16 @@
                     antum.</h4>
                 <div class="block justify-center flex">
                     <a href="#formulir-pendaftaran"
-                        class="px-4 py-3 mt-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-800 transition duration-300 ease-in-out cta-btn">Konsultasi
+                        class="px-4 py-3 mt-4 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-800 transition duration-300 ease-in-out cta-btn">Konsultasi
                         Gratis</a>
                 </div>
             </div>
-            <script>
-                // jQuery function to smoothly navigate to the specified ID
-                $(document).ready(function () {
-                    $('a[href^="#formulir-pendaftaran"]').on('click', function (event) {
-                        var target = $(this.getAttribute('href'));
-                        if (target.length) {
-                            event.preventDefault();
-                            $('html, body').stop().animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                        }
-                    });
-                });
-            </script>
             <div class="flex justify-center">
                 <img src="images/hero.jpeg" alt="Hero Atqin"
-                    class="h-auto w-48 md:w-full object-right shadow-md bg-gray-900">
+                    class="h-auto w-64  object-right shadow-md bg-gray-900 rounded-lg">
             </div>
         </div>
     </div>
-
     <script>
         $(".cta-btn").click(function () {
             $("html, body").animate({
@@ -138,14 +87,29 @@
         });
 
     </script>
+    <script>
+        // jQuery function to smoothly navigate to the specified ID
+        $(document).ready(function () {
+            $('a[href^="#formulir-pendaftaran"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
 
     <!--Stats-->
-    <section class="bg-yellow-100">
-        <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+    <section class="bg-green-900">
+        <div class="mx-auto max-w-screen-xl mt-14 px-4 py-12 sm:px-6 md:py-16 lg:px-8">
             <div class="mx-auto max-w-3xl text-center">
-                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Trusted by eCommerce Businesses</h2>
+                <h2 class="text-3xl font-bold text-yellow-400 sm:text-4xl">
+                    Trusted by eCommerce Businesses</h2>
 
-                <p class="mt-4 text-gray-500 sm:text-xl">
+                <p class="mt-4 text-gray-100 sm:text-xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores laborum labore
                     provident impedit esse recusandae facere libero harum sequi.
                 </p>
@@ -154,20 +118,20 @@
             <div class="mt-8 sm:mt-12">
                 <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-100">
                     <div class="flex flex-col px-4 py-8 text-center">
-                        <dt class="order-last text-lg font-medium text-gray-500">Total Mufrodat</dt>
+                        <dt class="order-last text-lg font-medium text-gray-100">Total Mufrodat</dt>
 
-                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">1500+</dd>
+                        <dd class="text-4xl font-extrabold text-yellow-400 md:text-5xl">1500+</dd>
                     </div>
 
                     <div class="flex flex-col px-4 py-8 text-center">
-                        <dt class="order-last text-lg font-medium text-gray-500">Total Ungkapan</dt>
+                        <dt class="order-last text-lg font-medium text-gray-100">Total Ungkapan</dt>
 
-                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">1000+</dd>
+                        <dd class="text-4xl font-extrabold text-yellow-400 md:text-5xl">1000+</dd>
                     </div>
 
                     <div class="flex flex-col px-4 py-8 text-center">
-                        <dt class="order-last text-lg font-medium text-gray-500">Total Jam Ajar Tutor</dt>
-                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">1000+</dd>
+                        <dt class="order-last text-lg font-medium text-gray-100">Total Jam Ajar Tutor</dt>
+                        <dd class="text-4xl font-extrabold text-yellow-400 md:text-5xl">1000+</dd>
                     </div>
                 </dl>
             </div>
@@ -175,17 +139,17 @@
     </section>
 
     <!--kata-kata-->
-    <section class="w-full my-2 py-10 bg-blue-900 h-screen">
+    <section class="w-full my-2 py-10 bg-white h-screen">
         <div class=" flex justify-center items-center">
             <div class="">
                 <div class="text-center font-semibold">
-                    <h2 class="text-5xl">
-                        <span class="text-blue-700 tracking-wide">Flexible </span>
-                        <span>Plans</span>
+                    <h2 class="text-5xl mb-4">
+                        <span class="text-blue-100 tracking-wide">Flexible </span>
+                        <span class="text-yellow-500">Plans</span>
                     </h2>
-                    <h3 class="text-3xl text-white"> Manfaatkan bulan Ramadhan untuk mendekat dengan bahasa Arab</h3>
+                    <h3 class="text-3xl text-gray-900"> Manfaatkan bulan Ramadhan untuk mendekat dengan bahasa Arab</h3>
 
-                    <p class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full">
+                    <p class="pt-6 text-xl text-gray-900 font-normal w-full px-8 md:w-full">
                         Choose a plan that works best for you and<br /> your team.
                     </p>
                 </div>
@@ -194,17 +158,94 @@
         </div>
     </section>
 
-    <div class="container mx-auto pt-4">
-        <div class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-5">
-            <h1 tabindex="0"
-                class="focus:outline-none xl:text-5xl md:text-3xl text-xl dark:text-white text-center text-gray-800 font-extrabold mb-5 pt-4">
-                Partnerships with Coveted Brands</h1>
-            <p tabindex="0"
-                class="focus:outline-none text-base md:text-lg lg:text-xl dark:text-gray-200 text-center text-gray-600 font-normal xl:w-10/12 xl:mx-auto">
-                Our success has come from being committed to the property and investing in the development of the
-                product to maximize sales. At the same time and maintaining the integrity.</p>
+
+    <section>
+        <div class="container mx-auto my-2 ">
+            <div class="bg-gray-100">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Image -->
+                        <div class="flex justify-center items-center">
+                            <img class="w-full md:max-w-md rounded-lg shadow-lg" src="images/hero.jpeg" alt="placeholder">
+                        </div>
+                        <!-- Content -->
+                        <div class="flex flex-col justify-center">
+                            <h1 tabindex="0" class="text-4xl md:text-5xl text-gray-800 font-bold mb-8 leading-tight md:leading-snug">
+                                Partnerships with Coveted Brands
+                            </h1>
+                            <p tabindex="0" class="text-lg md:text-xl text-gray-600 leading-relaxed md:w-10/12 mb-8">
+                                Our success has come from being committed to the property and investing in the development of the product to maximize sales. At the same time and maintaining the integrity.
+                            </p>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 font-medium inline-flex items-center">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--mulai compare-->
+            <div class="px-5 py-12 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <!-- Kursus Lain -->
+                    <div class="p-4 md:w-1/2">
+                        <div class="border-2 border-red-500 px-6 py-8 rounded-lg">
+                            <h3 class="text-xl md:text-2xl text-gray-900 font-semibold mb-6">Kursus Lain</h3>
+                            <ul class="text-base text-gray-800 list-none font-semibold ml-4">
+                                <li class="flex items-start mb-4">
+                                    <span class="inline-block mr-3 text-red-500">&#10005;</span>
+                                    <span>Sulit dipahami materinya, baru mulai sudah belajar Tata Bahasa (Grammar)</span>
+                                </li>
+                                <li class="flex items-start mb-4">
+                                    <span class="inline-block mr-3 text-red-500">&#10005;</span>
+                                    <span>Tidak ada tampilan visual yang mempermudah pembelajaran</span>
+                                </li>
+                                <li class="flex items-start mb-4">
+                                    <span class="inline-block mr-3 text-red-500">&#10005;</span>
+                                    <span>Tidak ada audio asli orang Arab, hanya suara Guru Indonesia yang berbahasa Arab</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="inline-block mr-3 text-red-500">&#10005;</span>
+                                    <span>Tidak tersedia rekaman pembelajaran, kalau tertinggal tidak bisa mengejar materi</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Kursus KUBA -->
+                    <div class="p-4 md:w-1/2">
+                        <div class="border-2 border-green-500 px-6 py-8 rounded-lg">
+                            <h3 class="text-xl md:text-2xl text-gray-900 font-semibold mb-6">Kursus KUBA</h3>
+                            <ul class="text-base text-gray-800 list-none font-semibold ml-4">
+                                <li class="flex items-start mb-4">
+                                    <span class="inline-block mr-3 text-green-500">&#10003;</span>
+                                    <span>Mudah dipahami materinya, belajar dibuat aktif berbicara bahasa Arab</span>
+                                </li>
+                                <li class="flex items-start mb-4">
+                                    <span class="inline-block mr-3 text-green-500">&#10003;</span>
+                                    <span>Ada tampilan visual yang sangat membantu pembelajaran</span>
+                                </li>
+                                <li class="flex items-start mb-4">
+                                    <span class="inline-block mr-3 text-green-500">&#10003;</span>
+                                    <span>Ada banyak latihan menggunakan audio asli orang Arab</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="inline-block mr-3 text-green-500">&#10003;</span>
+                                    <span>Semua kelas direkam, dan bisa diakses saat tertinggal materi karena tidak hadir</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
         </div>
-    </div>
+    </section>
 
     <!--MAIN FEATURES-->
     <div class="bg-white py-24 sm:py-32 shadow:md">
@@ -222,9 +263,9 @@
                     <!--icon & text-->
                     <div class="relative pl-20">
                         <dt class="text-base font-semibold leading-7 text-gray-900">
-                            <div class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg">
-                                <img src="icons/certified-svgrepo-com.svg" alt="">
-                            </div>
+                            <svg data-slot="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"></path>
+                              </svg>
                             Tutor Tersertifikasi
                         </dt>
                         <dd class="mt-2 text-base leading-9 text-gray-600">Tutor kami adalah lulusan S1 LIPIA yang telah
